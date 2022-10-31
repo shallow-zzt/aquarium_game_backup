@@ -1,0 +1,118 @@
+{
+"res":{
+	"blank0000": {"x":40,"y":40,"w":0,"h":0},
+	"mi_10000": {"x":80,"y":40,"w":210,"h":229},
+	"mi_20000": {"x":330,"y":40,"w":178,"h":216},
+	"mi_30000": {"x":548,"y":40,"w":145,"h":224},
+	"mi_40000": {"x":733,"y":40,"w":192,"h":205},
+	"mi_50000": {"x":40,"y":309,"w":206,"h":276},
+	"wmi_10000": {"x":286,"y":309,"w":230,"h":233},
+	"wmi_20000": {"x":556,"y":309,"w":155,"h":230},
+	"wmi_30000": {"x":751,"y":309,"w":183,"h":227},
+	"wmi_40000": {"x":40,"y":625,"w":208,"h":215},
+	"wmi_50000": {"x":288,"y":625,"w":220,"h":283},
+	"ymi_10000": {"x":548,"y":625,"w":230,"h":232},
+	"ymi_20000": {"x":40,"y":948,"w":204,"h":230},
+	"ymi_30000": {"x":284,"y":948,"w":181,"h":235},
+	"ymi_40000": {"x":505,"y":948,"w":207,"h":218},
+	"ymi_50000": {"x":752,"y":948,"w":211,"h":276}
+},
+"frames": {
+	"blank": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"blank0000","x":107374182,"y":107374182}
+		]
+	},
+	"mi_1": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"mi_10000","x":-105,"y":-114.5}
+		]
+	},
+	"mi_2": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"mi_20000","x":-89,"y":-108}
+		]
+	},
+	"mi_3": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"mi_30000","x":-72.5,"y":-112}
+		]
+	},
+	"mi_4": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"mi_40000","x":-96,"y":-102.5}
+		]
+	},
+	"mi_5": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"mi_50000","x":-103,"y":-138}
+		]
+	},
+	"wmi_1": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"wmi_10000","x":-115,"y":-116.5}
+		]
+	},
+	"wmi_2": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"wmi_20000","x":-77.5,"y":-115}
+		]
+	},
+	"wmi_3": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"wmi_30000","x":-91.5,"y":-113.5}
+		]
+	},
+	"wmi_4": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"wmi_40000","x":-104,"y":-107.5}
+		]
+	},
+	"wmi_5": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"wmi_50000","x":-110,"y":-141.5}
+		]
+	},
+	"ymi_1": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"ymi_10000","x":-115,"y":-116}
+		]
+	},
+	"ymi_2": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"ymi_20000","x":-102,"y":-115}
+		]
+	},
+	"ymi_3": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"ymi_30000","x":-90.5,"y":-117.5}
+		]
+	},
+	"ymi_4": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"ymi_40000","x":-103.5,"y":-109}
+		]
+	},
+	"ymi_5": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"ymi_50000","x":-105.5,"y":-138}
+		]
+	}
+}
+}

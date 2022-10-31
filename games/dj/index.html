@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>疯狂点击</title>
+	<meta item="description" content="来试试手速！！！" />
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<style>
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
+
+		input[type="number"] {
+			-moz-appearance: textfield;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-position: 0px 0px;
+			transition: 0.3s;
+			overflow: hidden;
+
+		}
+
+		.bj {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 0;
+			transition: 0.3s;
+			background: linear-gradient(to bottom right, rgb(254, 207, 239), rgb(161, 140, 209));
+			background-repeat: no-repeat;
+		}
+
+		@media screen and (max-width : 600px) {
+			.box {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin: 0 auto;
+			}
+		}
+
+		@media screen and (min-width : 601px) {
+			.box {
+				position: relative;
+				width: 600px;
+				height: 100%;
+				margin: 0 auto;
+			}
+		}
+
+		.dj {
+			position: relative;
+			top: 50%;
+			margin: -35% auto;
+			width: 70%;
+			height: 500px;
+			color: #000000;
+			background-image: linear-gradient(to right, #aaffaa, #ffffaa, #ffaaaa, #ffaaff);
+			background-size: 20000px 20000px;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			cursor: pointer;
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		.dj span {
+			font-weight: 800;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-tap-highlight-color: transparent;
+			cursor: pointer;
+		}
+
+		.time {
+			position: absolute;
+			width: 100%;
+			top: 10%;
+			font-weight: 800;
+			text-align: center;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			pointer-events: none;
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		.all {
+			position: absolute;
+			top: 0px;
+			height: 100%;
+			width: 100%;
+			background: rgb(0, 0, 0, 0.3);
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		@media screen and (max-width : 600px) {
+			.next {
+				position: absolute;
+				top: 80%;
+				width: 70%;
+				height: auto;
+				padding: 5px 0px;
+				text-align: center;
+				background: red;
+				border-radius: 50px;
+				font-weight: 800;
+				margin: 0px, auto;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				-webkit-tap-highlight-color: transparent;
+				cursor: pointer;
+			}
+		}
+
+		@media screen and (min-width : 601px) {
+			.next {
+				position: absolute;
+				top: 80%;
+				width: 400px;
+				height: auto;
+				padding: 5px 0px;
+				text-align: center;
+				background: red;
+				border-radius: 50px;
+				font-weight: 800;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				-webkit-tap-highlight-color: transparent;
+				cursor: pointer;
+			}
+		}
+	</style>
+	<link rel="shortcut icon"
+		href="https://img-bcy-qn.pstatp.com/Public/Upload/avatar/3597222026164942/504a3cf88adf495db68946ec20b0643a/fat.jpg/abig"
+		type="image/x-icon" />
+		<script data-ad-client="ca-pub-6239573602007020" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?d41fa227018de3772f58108c76d3dfd5";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+</head>
+
+<body>
+	<div class="bj"></div>
+	<div class="box">
+		<div class="dj" id="dj" onclick="star()">
+			<span id="djtxt">点我开始</span>
+		</div>
+	</div>
+	<div class="time" id="time">10000</div>
+	<div class="all" id="all">
+		<div class="next" id="next" onclick="next()">再玩一次</div>
+	</div>
+	</dody>
+
+	<script>
+		function stop() {
+			return false;
+		}
+		document.oncontextmenu = stop;
+		window.onresize = function () {
+			var w = document.getElementById("dj").offsetWidth;
+			document.getElementById("dj").style.height = w + "px";
+			document.getElementById("next").style.fontSize = w / 6 + "px";
+			document.getElementById("time").style.fontSize = w / 4 + "px";
+			document.getElementById("djtxt").style.fontSize = w / 6 + "px";
+			document.getElementById("djtxt").style.lineHeight = w + "px";
+			document.getElementById("djtxt").style.marginLeft = ((w / 2) - (document.getElementById("djtxt").offsetWidth / 2)) + "px";
+			document.getElementById("next").style.marginLeft = ((window.innerWidth / 2) - (document.getElementById("next").offsetWidth / 2)) + "px";
+		}
+		var int = 0;
+		var ltime = 10000;
+		var cs = 0;
+		var starts = 0;
+		window.onload = function () {
+			document.getElementById("all").style.display = "none";
+			document.getElementById("time").innerHTML = "10000ms";
+			var w = document.getElementById("dj").offsetWidth;
+			document.getElementById("dj").style.height = w + "px";
+			document.getElementById("next").style.fontSize = w / 6 + "px";
+			document.getElementById("time").style.fontSize = w / 4 + "px";
+			document.getElementById("djtxt").style.fontSize = w / 6 + "px";
+			document.getElementById("djtxt").style.lineHeight = w + "px";
+			document.getElementById("djtxt").style.marginLeft = ((w / 2) - (document.getElementById("djtxt").offsetWidth / 2)) + "px";
+			document.getElementById("next").style.marginLeft = ((window.innerWidth / 2) - (document.getElementById("next").offsetWidth / 2)) + "px";
+			window.clearInterval(int);
+			int = setInterval(timer, 5);
+		}
+		function timer() {
+			document.getElementById("next").style.marginLeft = ((window.innerWidth / 2) - (document.getElementById("next").offsetWidth / 2)) + "px";
+			if (ltime == 0) {
+				starts = 2;
+				ltime = 10000;
+				document.getElementById("all").style.display = "block";
+			}
+			if (starts == 1) {
+				var w = document.getElementById("dj").offsetWidth;
+				document.getElementById("djtxt").style.fontSize = w / 2 + "px";
+				document.getElementById("djtxt").style.lineHeight = w + "px";
+				document.getElementById("djtxt").style.marginLeft = ((w / 2) - (document.getElementById("djtxt").offsetWidth / 2)) + "px";
+				ltime = ltime - 5;
+				document.getElementById("time").innerHTML = ltime + "ms";
+			}
+			if (cs <= 200) {
+				document.getElementById("dj").style.backgroundPosition = cs / 2 + "%";
+			}
+			else {
+				document.getElementById("dj").style.backgroundPosition = 100 + "%";
+			}
+		}
+		function star() {
+			var audio = new Audio("https://uploader.shimo.im/f/usGpPHPz3KBCFSmc.mp3");
+			audio.play();
+			if (starts == 1) {
+				cs = cs + 1;
+				document.getElementById("djtxt").innerHTML = cs;
+			}
+			if (starts == 0) {
+				starts = 1;
+				document.getElementById("djtxt").innerHTML = cs;
+			}
+		}
+		function next() {
+			if (starts == 2) {
+				document.getElementById("djtxt").innerHTML = "点我开始";
+				document.getElementById("time").innerHTML = 10000 + "ms";
+				cs = 0;
+				var w = document.getElementById("dj").offsetWidth;
+				document.getElementById("djtxt").style.fontSize = w / 6 + "px";
+				document.getElementById("djtxt").style.lineHeight = w + "px";
+				document.getElementById("djtxt").style.marginLeft = ((w / 2) - (document.getElementById("djtxt").offsetWidth / 2)) + "px";
+				document.getElementById("all").style.display = "none";
+				starts = 0;
+			}
+		}
+	</script>
+
+</html>
+<style>
+	a {
+		text-decoration: none;
+		user-select: none;
+		outline: none;
+		border-style: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: pointer;
+		float: left;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	.fh {
+		position: fixed;
+		font-size: 20px;
+		margin: 10px;
+		top: 0px;
+		left: 0px;
+		color: #ffffff;
+	}
+
+	.qp {
+		position: fixed;
+		font-size: 20px;
+		margin: 5px;
+		top: 0px;
+		right: 5px;
+		color: #ffffff;
+	}
+</style>
+
+<body>
+	<a href="https://game.aquarium.moe" class="fh">返回</a>
+	</dody>
+	<script>
+		function full() {
+			if (document.body.requestFullscreen) {
+				document.body.requestFullscreen();
+			} else if (document.body.mozRequestFullScreen) {
+				document.body.mozRequestFullScreen();
+			} else if (document.body.webkitRequestFullscreen) {
+				document.body.webkitRequestFullscreen();
+			} else if (document.body.msRequestFullscreen) {
+				document.body.msRequestFullscreen();
+			}
+		}
+	</script>
