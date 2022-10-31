@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.fly_header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 60px;
+    border-radius: 0;
+    border-bottom-width: 2px;
+    border-bottom-color: #00CCCC;
+    border-bottom-style: solid
+}
+
+.zhong_biaoti_index {
+    color: #393D49;
+}
+
+.layui-btn {
+    background-color: #009688;
+}
+
+.layui-btn-danger {
+    background-color: #FF5722;
+}
+
+.layui-form-danger:focus {
+    border-color: #009688 !important;
+    box-shadow: 0 0 5px #09b4a3;
+    -webkit-box-shadow: 0 0 5px #09b4a3;
+    -moz-box-shadow: 0 0 5px #09b4a3;
+}
+
+.layui-textarea {
+    min-height: 100px;
+    height: auto;
+    padding: 6px 10px;
+    resize: vertical;
+    color: #393D49;
+}
+
+.layui-form-item-input {
+    margin-bottom: 0px;
+    clear: both;
+    *zoom: 1;
+    color: #393D49;
+}
+
+.layui-nav .layui-nav-item a:hover, .layui-nav .layui-this a {
+    color: #393D49;
+}
+
+.layui-nav .layui-nav-item a {
+    color: #393D49;
+}
+
+.layui-nav .layui-nav-more {
+    border-color: #393D49 transparent transparent;
+    border-top-color: #393D49;
+}
+
+.layui-nav .layui-nav-mored, .layui-nav-itemed .layui-nav-more {
+    border-color: transparent transparent #393D49;
+}
+
+.layui-nav .layui-nav-child a:hover {
+    background-color: #fff;
+    color: #00CCCC;
+    text-decoration: underline;
+}
+
+.layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this {
+    background-color: #fff;
+    color:#00CCCC;
+}
+
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+    background: #00CCCC;
+}
+
